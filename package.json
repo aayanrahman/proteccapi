@@ -5,13 +5,15 @@
   "type": "module",
   "main": "src/index.js",
   "bin": {
-    "secure-scan": "./bin/cli.js"
+    "secure-scan": "./bin/cli.js",
+    "secure-check": "./bin/security-check.js"
   },
   "scripts": {
     "start": "node src/index.js",
-    "scan": "node ./bin/cli.js",
+    "scan": "secure-scan",
+    "check": "secure-scan secure-check",
     "test": "echo \"No test specified\"",
-    "prepare": "husky"
+    "prepare": "husky install"
   },
   "keywords": [
     "security",
@@ -23,10 +25,11 @@
   "author": "Realjs",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^5.2.0",
+    "chalk": "^5.4.1",
     "commander": "^9.4.0",
     "dotenv": "^16.0.3",
     "inquirer": "^9.2.3",
+    "leven": "^4.0.0",
     "ora": "^6.1.2"
   },
   "devDependencies": {
