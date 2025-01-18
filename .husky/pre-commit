@@ -1,1 +1,2 @@
-proteccapi
+#!/bin/sh
+npm run scan

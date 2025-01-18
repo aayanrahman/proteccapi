@@ -9,6 +9,7 @@
   },
   "scripts": {
     "start": "node src/index.js",
+    "scan": "node ./bin/cli.js",
     "test": "echo \"No test specified\"",
     "prepare": "husky"
   },
@@ -19,7 +20,7 @@
     "git-hook",
     "env"
   ],
-  "author": "Your Name",
+  "author": "Realjs",
   "license": "MIT",
   "dependencies": {
     "chalk": "^5.2.0",
