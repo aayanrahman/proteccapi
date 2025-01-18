@@ -1,2 +1,1 @@
-const awsKey = "AKIAEXAMPLE123456789";
-const openAIKey = "sk-test-EXAMPLE123456789";
+const apiKey = 'sk-test-1234567890abcdef1234567890abcdef';
