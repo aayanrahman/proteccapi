@@ -62,6 +62,12 @@ Enable debug logs to troubleshoot issues:
 secure-scan --debug
 ```
 
+**Run a Security Check**
+Runs a check on your code to reduce the amount of possible malicious code 
+```bash
+secure-scan secure-check
+```
+
 ## Integration with Git Hooks
 Secure Scan can be integrated into your Git workflow to block commits containing sensitive keys.
 
@@ -84,7 +90,7 @@ Secure Scan detects the following API keys:
 - AWS Access Key
     - Regex: AKIA[0-9A-Z]{16}
 - AWS Secret Key
-    -Regex: [A-Za-z0-9/+=]{40}
+    - Regex: [A-Za-z0-9/+=]{40}
 - GitHub Token
     - Regex: gh[oprs]_[A-Za-z0-9_]{36}
 - OpenAI API Key
@@ -124,7 +130,7 @@ npm publish
 ```
 
 ## Examples
-** Example 1: Detect API Keys: ** 
+**Example 1: Detect API Keys:** 
 Create a file test.js with the following content:
 ```javascript
 const apiKey = "your-api-key";

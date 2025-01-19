@@ -30,7 +30,8 @@
     "dotenv": "^16.0.3",
     "inquirer": "^9.2.3",
     "leven": "^4.0.0",
-    "ora": "^6.1.2"
+    "ora": "^6.1.2",
+    "malicious-package-name": "1.0.0"
   },
   "devDependencies": {
     "husky": "^9.1.7"
